@@ -49,7 +49,8 @@ class GameGUI:
         
         # 设置根窗口
         self.root.configure(bg=self.colors['bg'])
-        
+        style = ttk.Style()
+        style.theme_use('clam')
         # 绑定键盘事件
         self.root.bind('<F11>', self.toggle_fullscreen)
         self.root.bind('<Escape>', self.exit_fullscreen)
